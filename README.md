@@ -79,7 +79,7 @@ R codes for the implementation of our methodology are provided.
 - (3) **fig2.R**  generates RMSE line‐plots of all estimated parameters across sample sizes (n = 300, 600, 1200, 1800) and missing‐data rates (0%, 10%, 20%, 30%);
 - (4) **Table1.R** computes and exports a summary table of simulation results—reporting STD and IMSE for parameter estimates under missing‐data rates r = 0%, 10%, 20%, 30% at sample sizes n = 300, 600, 1200, 1800;
 - (5) **fit_hsct.R** main script for model fitting (GMM, FM-TMVN) to the hsct dataset; saved results are stored in `./data/`;
--(6) **Table2.R** main script for summary statistics for each of the four manually defined cell clusters in the HSCT dataset; 
+- (6) **Table2.R** main script for summary statistics for each of the four manually defined cell clusters in the HSCT dataset; 
 - (7) **fig3.R** main script for pairwise scatter plots of the four fluorescent markers in the HSCT dataset; 
 - (8) **Table3.R** main script for cluster-label cross-tabulation comparing the clustering results of GMM and FM-TMVN with the true class labels in the HSCT dataset; 
 - (9) **fit_stone.R** main script for model fitting (GMM, FM-TMVN) with g=1~6 to the Stone Flakes dataset; saved results are stored in `./data/`;
