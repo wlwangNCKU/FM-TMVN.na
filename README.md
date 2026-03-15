@@ -117,7 +117,7 @@ R codes for the implementation of our methodology are provided.
 
 `./data/results` subfolder contains
 
-- (11) `./simulation/`: Subfolder storing intermediate simulation results, including estimated parameters (`./para/`), standard errors (`./sd/`) and RDatas (`./rdata/`) for various (n, missing rate) settings.
+- (11) `./simulation/`: Subfolder storing intermediate simulation results, including estimated parameters (`./para/`) and standard errors (`./sd/`) for various (n, missing rate) settings.
 
 ## Additional Remark ##
 - Note (1): One can directly run each "source(.)" described in **master.R** file in the seperate R session to obtain the results;
