@@ -113,7 +113,10 @@ R codes for the implementation of our methodology are provided.
 - (7) **fig4.eps**: BIC values for the GMM and FM-TMVN models with the number of clusters varying from g = 1 to 6 in the StoneFlakes dataset;
 - (8) **fig5.eps**: Scatter plots overlaid with fitted GMM and FM-TMVN contours for 5 pairs of variables of the stone flakes data;
 - (9) **TableF1.csv**: Parameter estimates and their standard errors in parentheses for the GMM and FM-TMVN models fitted to the HSCT dataset;
-- (10) **figF1.eps**: Scatter-histogram plots of one simulation case with 600 random samples and 10% missingness from FM-TMVN model; `./data/results` subfolder contains;
+- (10) **figF1.eps**: Scatter-histogram plots of one simulation case with 600 random samples and 10% missingness from FM-TMVN model;
+
+`./data/results` subfolder contains
+
 - (11) `./simulation/`: Subfolder storing intermediate simulation results, including estimated parameters (`./para/`), standard errors (`./sd/`) and RDatas (`./rdata/`) for various (n, missing rate) settings.
 
 ## Additional Remark ##
