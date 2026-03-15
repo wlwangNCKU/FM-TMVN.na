@@ -74,50 +74,47 @@ R codes for the implementation of our methodology are provided.
 ## Subfolder: ./code ##
 `./code` contains
 
--(1) **fig1.R** main script to generate 3D perspective views and contour plots of finite mixtures of truncated bivariate normal (FM-TMVN) distributions, varying the number of components (g = 1, 2, 3) and truncation schemes (none, right, left, and double);
--(2) **simulation.R**  main script for re-generating simulated datasets and estimating model parameters under different sample sizes and missing rates; 
--(3) **fig2.R**  generates RMSE line‐plots of all estimated parameters across sample sizes (n = 300, 600, 1200, 1800) and missing‐data rates (0%, 10%, 20%, 30%);
--(4) **Table1.R** computes and exports a summary table of simulation results—reporting STD and IMSE for parameter estimates under missing‐data rates r = 0%, 10%, 20%, 30% at sample sizes n = 300, 600, 1200, 1800;
--(5) **fit_hsct.R** main script for model fitting (GMM, FM-TMVN) to the hsct dataset; saved results are stored in `./data/`;
+- (1) **fig1.R** main script to generate 3D perspective views and contour plots of finite mixtures of truncated bivariate normal (FM-TMVN) distributions, varying the number of components (g = 1, 2, 3) and truncation schemes (none, right, left, and double);
+- (2) **simulation.R**  main script for re-generating simulated datasets and estimating model parameters under different sample sizes and missing rates; 
+- (3) **fig2.R**  generates RMSE line‐plots of all estimated parameters across sample sizes (n = 300, 600, 1200, 1800) and missing‐data rates (0%, 10%, 20%, 30%);
+- (4) **Table1.R** computes and exports a summary table of simulation results—reporting STD and IMSE for parameter estimates under missing‐data rates r = 0%, 10%, 20%, 30% at sample sizes n = 300, 600, 1200, 1800;
+- (5) **fit_hsct.R** main script for model fitting (GMM, FM-TMVN) to the hsct dataset; saved results are stored in `./data/`;
 -(6) **Table2.R** main script for summary statistics for each of the four manually defined cell clusters in the HSCT dataset; 
--(7) **fig3.R** main script for pairwise scatter plots of the four fluorescent markers in the HSCT dataset; 
--(8) **Table3.R** main script for cluster-label cross-tabulation comparing the clustering results of GMM and FM-TMVN with the true class labels in the HSCT dataset; 
--(9) **fit_stone.R** main script for model fitting (GMM, FM-TMVN) with g=1~6 to the Stone Flakes dataset; saved results are stored in `./data/`;
--(10) **fig4.R** main script for BIC values for the GMM and FM-TMVN models with the number of clusters varying from g = 1 to 6; 
--(11) **fig5.R** main script for projected scatter plots overlaid with fitted GMM and FM-TMVN contours for 5 pairs of variables of the stone flakes data;
--(12) **TableF1.R** main script for Parameter estimates and their standard errors in parentheses for the GMM and FM-TMVN models fitted to the HSCT dataset; 
--(13)  **figF1.R** Scatter-histogram plots of one simulation case with 600 random samples and 10% missingness. The cross symbols represent kNN imputed missing values.
+- (7) **fig3.R** main script for pairwise scatter plots of the four fluorescent markers in the HSCT dataset; 
+- (8) **Table3.R** main script for cluster-label cross-tabulation comparing the clustering results of GMM and FM-TMVN with the true class labels in the HSCT dataset; 
+- (9) **fit_stone.R** main script for model fitting (GMM, FM-TMVN) with g=1~6 to the Stone Flakes dataset; saved results are stored in `./data/`;
+- (10) **fig4.R** main script for BIC values for the GMM and FM-TMVN models with the number of clusters varying from g = 1 to 6; 
+- (11) **fig5.R** main script for projected scatter plots overlaid with fitted GMM and FM-TMVN contours for 5 pairs of variables of the stone flakes data;
+- (12) **TableF1.R** main script for Parameter estimates and their standard errors in parentheses for the GMM and FM-TMVN models fitted to the HSCT dataset; 
+- (13)  **figF1.R** Scatter-histogram plots of one simulation case with 600 random samples and 10% missingness. The cross symbols represent kNN imputed missing values.
 
 # Data and Code for data #
 ## Subfolder: ./data ##
 `./data/` contains 
 
--(1) **hsct_result.RData** : These files contains precomputed fits of the GMM and FM-TMVN models with g = 4 on the HSCT dataset, enabling direct generation of all related tables and figures without re-running the estimation;
--(2) **stone_result.Rdata** : Contains precomputed fits of the GMM and FM-TMVN models for g = 1–6 on the Stone Flakes dataset, allowing you to generate all corresponding figures and tables without re-running the ECM algorithms;
+- (1) **hsct_result.RData** : These files contains precomputed fits of the GMM and FM-TMVN models with g = 4 on the HSCT dataset, enabling direct generation of all related tables and figures without re-running the estimation;
+- (2) **stone_result.Rdata** : Contains precomputed fits of the GMM and FM-TMVN models for g = 1–6 on the Stone Flakes dataset, allowing you to generate all corresponding figures and tables without re-running the ECM algorithms;
 
 `./data/source` subfolder contains
 	
--(3) **hsct.csv** contains the HSCT flow cytometry data used for clustering and imputation analyses in Section 6;
--(4) **StoneFlakes.csv** contains the Stone Flakes morphological measurements used for clustering experiments in Section 6.
+- (3) **hsct.csv** contains the HSCT flow cytometry data used for clustering and imputation analyses in Section 6;
+- (4) **StoneFlakes.csv** contains the Stone Flakes morphological measurements used for clustering experiments in Section 6.
 
 # Data and Code for results #
 ## Subfolder: ./results ##
 `./results`  contains
 
--(1) **fig1.eps**: 3D perspective and contour plots for the FM-TMVN model with g = 1~3;
--(2) **fig2.eps**: RMSE of estimated parameter values across varying samples sizes and missing rates based on simulation study;
--(3) **Table1.csv**: Simulation results showing the STD and IMSE of the maximum likelihood estimates under missing rates of r = 0%, 10%, 20% and 30%, across larger sample sizes n = 300, 600, 1200, 1800;
--(4) **Table2.csv**: Summary statistics for each of the four manually defined cell clusters in the HSCT dataset;
--(5) **fig3.eps**: Pairwise scatter plots of the four fluorescent markers in the HSCT dataset;
--(6) **Table3.csv**: Cluster-label cross-tabulation comparing the clustering results of GMM and FM-TMVN with the true class labels in the HSCT dataset;
--(7) **fig4.eps**: BIC values for the GMM and FM-TMVN models with the number of clusters varying from g = 1 to 6 in the StoneFlakes dataset;
--(8) **fig5.eps**: Scatter plots overlaid with fitted GMM and FM-TMVN contours for 5 pairs of variables of the stone flakes data;
--(9) **TableF1.csv**: Parameter estimates and their standard errors in parentheses for the GMM and FM-TMVN models fitted to the HSCT dataset;
--(10) **figF1.eps**: Scatter-histogram plots of one simulation case with 600 random samples and 10% missingness from FM-TMVN model;
-
-`./data/results` subfolder contains
-	
--(11) `./simulation/`: Subfolder storing intermediate simulation results, including estimated parameters (`./para/`), standard errors (`./sd/`) and RDatas (`./rdata/`) for various (n, missing rate) settings.
+- (1) **fig1.eps**: 3D perspective and contour plots for the FM-TMVN model with g = 1~3;
+- (2) **fig2.eps**: RMSE of estimated parameter values across varying samples sizes and missing rates based on simulation study;
+- (3) **Table1.csv**: Simulation results showing the STD and IMSE of the maximum likelihood estimates under missing rates of r = 0%, 10%, 20% and 30%, across larger sample sizes n = 300, 600, 1200, 1800;
+- (4) **Table2.csv**: Summary statistics for each of the four manually defined cell clusters in the HSCT dataset;
+- (5) **fig3.eps**: Pairwise scatter plots of the four fluorescent markers in the HSCT dataset;
+- (6) **Table3.csv**: Cluster-label cross-tabulation comparing the clustering results of GMM and FM-TMVN with the true class labels in the HSCT dataset;
+- (7) **fig4.eps**: BIC values for the GMM and FM-TMVN models with the number of clusters varying from g = 1 to 6 in the StoneFlakes dataset;
+- (8) **fig5.eps**: Scatter plots overlaid with fitted GMM and FM-TMVN contours for 5 pairs of variables of the stone flakes data;
+- (9) **TableF1.csv**: Parameter estimates and their standard errors in parentheses for the GMM and FM-TMVN models fitted to the HSCT dataset;
+- (10) **figF1.eps**: Scatter-histogram plots of one simulation case with 600 random samples and 10% missingness from FM-TMVN model; `./data/results` subfolder contains;
+- (11) `./simulation/`: Subfolder storing intermediate simulation results, including estimated parameters (`./para/`), standard errors (`./sd/`) and RDatas (`./rdata/`) for various (n, missing rate) settings.
 
 ## Additional Remark ##
 - Note (1): One can directly run each "source(.)" described in **master.R** file in the seperate R session to obtain the results;
@@ -132,4 +129,3 @@ R codes for the implementation of our methodology are provided.
 - Note (10): To draw Figures 4 and 5 in this paper, please load the **stone.result.Rdata** file in subfolder `./data/`, and then run the **fig4.R** and **fig5.R** scripts in subfolder `./code/`.
 - Note (11): To reproduce the results presented in Table F1, please source the scripts **SE.FMTMVN.na.R** from the `./function/` folder, load the **hsct_result.RData** file in subfolder `./data/`, and then run the script **figF1.R** in the `./code/` folder. The figure will be saved as **figF1.eps** in the `./results/` folder.
 - Note (12): To reproduce the results presented in Figure F1, please source the scripts **gener.na.R** from the `./function/` folder, and then run the script **figF1.R** in the `./code/` folder. The figure will be saved as **figF1.eps** in the `./results/` folder.
-  
