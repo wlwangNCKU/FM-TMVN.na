@@ -19,7 +19,7 @@ bic_gmm = round(sapply(g, function(g) total[[ paste0(g, "_2") ]]$BIC),3)
 df = data.frame(
   g = rep(g, 2),
   BIC = c(bic_gmm, bic_fm_tmvn),
-  Model = factor(rep(c("GMM", "FM-TMVN"), each = length(g)))
+  Model = factor(rep(c("FM-TMVN", "GMM"), each = length(g)))
 )
 highlight_points = data.frame(
   g = c(2, 2),
