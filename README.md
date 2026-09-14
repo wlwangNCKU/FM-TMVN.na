@@ -1,8 +1,8 @@
 # FM-TMVN.na
-Supplement: Data and Code for "Maximum likelihood estimation for mixtures of truncated multivariate normal distributions with missing information" by Wan-Lun Wang, Victor H. Lachos, Pei-Ting Ho and Tsung-I Lin*
+Supplement: Data and Code for "Finite mixtures of truncated multivariate normal distributions for clustering bounded data with missing values" by Wan-Lun Wang, Victor H. Lachos, Pei-Ting Ho and Tsung-I Lin*
 
 # Author responsible for the code #
-For questions, comments or remarks about the code please contact responsible authors, Dr. Tsung-I Lin (tilin@nchu.edu.tw) and Dr. Wan-Lun Wang (wangwl@gs.ncku.edu.tw)
+For questions, comments or remarks about the code please contact responsible authors, Wan-Lun Wang (wangwl@gs.ncku.edu.tw), Victor H. Lachos (hlachos@uconn.edu), Pei-Ting Ho (clarice122327@gmail.com), and Tsung-I Lin (tilin@nchu.edu.tw)
 
 # Configurations #
 The code was written/evaluated in R with the following software 
